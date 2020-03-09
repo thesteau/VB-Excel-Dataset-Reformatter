@@ -483,7 +483,7 @@ Sub Final_Block(newlastrow)
 End Sub
 
 sub M_Col_highlight(newlastrow)
-newlastrow = newlastrow + 14
+    newlastrow = newlastrow + 14
     For Each cell In ActiveSheet.Range("m1:m" & newlastrow)
        If cell.Value = 0 and cell.HasFormula = TRUE Then
        cell.select
